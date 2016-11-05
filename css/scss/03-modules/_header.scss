@@ -1,0 +1,105 @@
+.site-header {
+    height: 117px;
+    position: relative;
+    z-index: 5;
+    padding-top: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.logo {
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.header-menu {
+    ul {
+        list-style: none;
+
+        .menu-item {
+            display: inline-block;
+            margin-right: 5px;
+
+            a {
+                display: block;
+                padding: 8px 15px;
+                color: #fff;
+                text-transform: uppercase;
+                border-radius: 20px;
+                -webkit-transition: background-color 0.3s ease;
+                -o-transition: background-color 0.3s ease;
+                transition: background-color 0.3s ease;
+                font-family: $osb;
+
+                &:hover {
+                    text-decoration: none;
+                    background-color: #ffc300;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+.search {
+    position: relative;
+    text-align: right;
+    color: #fff;
+    position: relative;
+
+    .fa-search {
+        cursor: pointer;
+    }
+
+    .search-bar {
+        position: absolute;
+        right: 0;
+        bottom: -58px;
+        width: 312px;
+
+        margin-bottom: -20px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        &.active {
+            margin-bottom: 0;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        form {
+            width: 100%;
+            @include flex();
+        }
+
+        .input-search,
+        .button-search {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .input-search {
+            width: 270px;
+            height: 42px;
+            border: 0;
+            color: #666;
+            padding: 0 15px;
+        }
+
+        .button-search {
+            width: 42px;
+            height: 42px;
+            border: 0;
+            background-color: $yellow;
+        }
+    }
+}

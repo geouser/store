@@ -1,0 +1,47 @@
+.button {
+    border-radius: 20px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 100%;
+    line-height: 45px;
+    padding: 0 45px;
+    transition: all 0.3s ease;
+
+    &--transparent {
+        border: 1px solid #fff;
+        background-color: transparent;
+
+        &:hover {
+            background-color: $yellow;
+            border-color: $yellow;
+        }
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+
+.btn-shopnow {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    color: #666666;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+
+    &:hover {
+        color: #fff;
+        background: #ffc300;
+        border-color: #ffc300;
+    }
+}

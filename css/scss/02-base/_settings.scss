@@ -1,0 +1,64 @@
+
+// TYPOGRAPHIC
+// ---------------------------
+html,
+body {
+	height: 100%;
+}
+
+body {
+    font-family: $os;
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+section {
+    position: relative;
+    background-color: #fff;
+}
+
+h2.title {
+    width: 100%;
+    text-align: center;
+    font-size: 214%;
+    font-family: $om;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: normal;
+}
+.subtitle {
+    color: #999999;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+// lAYOUT
+// ---------------------------
+.row-top {
+    @include flex($alignI: flex-start, $justify: flex-start);
+}
+.row-middle {
+    @include flex($alignI: center, $justify: flex-start);
+}
+.row-stretch {
+    @include flex($alignI: stretch, $justify: flex-start);
+}
+.row-bottom {
+    @include flex($alignI: flex-end, $justify: flex-start);
+}
+.row-top,
+.row-middle,
+.row-stretch,
+.row-bottom {
+    &:after,
+    &:before {
+        display: none;
+    }
+}
