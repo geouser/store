@@ -66,6 +66,15 @@ jQuery(document).ready(function($) {
         slidesToScroll: 1
     })
 
+    $('.partners-slider').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000
+    })
+
 
     /*---------------------------
                                   Countdown

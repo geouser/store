@@ -1,0 +1,204 @@
+.footer {
+    background-color: #1c1c1c;
+    position: relative;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    .inner-top {
+
+    }
+
+    .inner-center {
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        padding: 30px 0;
+
+        h3 {
+            font-size: 123.07%;
+            margin-bottom: 13px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        ul li {
+            padding-left: 15px;
+            display: block;
+            position: relative;
+            margin-bottom: 5px;
+            font-size: 13px;
+
+            &:before {
+                position: absolute;
+                top: 8px;
+                left: 0;
+                content: "";
+                width: 4px;
+                height: 4px;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                background-color: #fff;
+            }
+
+            a {
+                color: #fff;
+                display: inline-block;
+                border-bottom: 1px dotted transparent;
+                opacity: .8;
+
+                &:hover {
+                    border-bottom: 1px dotted #fff;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .contact-us {
+            li {
+                padding-left: 25px;
+                margin-bottom: 10px;
+
+                &:before {
+                    display: none;
+                }
+
+                .fa {
+                    position: absolute;
+                    top: 2px;
+                    left: 0;
+                    font-size: 18px;
+                    color: #fff;
+                    opacity: .8;
+                }
+
+                a,
+                span {
+                    color: #fff;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .logo-footer {
+        height: 85px;
+        margin-right: 35px;
+        @extend %vertAlign;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .menu-bottom {
+        display: inline-block;
+        vertical-align: middle;
+
+        .menu-item {
+            &:not(:last-child):after {
+                content: "-";
+                display: inline;
+                color: #fff;
+                vertical-align: middle;
+                margin: 0 3px 0 7px;
+            }
+        }
+
+        .menu-item a {
+            color: #fff;
+            vertical-align: middle;
+            font-size: 13px;
+            opacity: .8;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .checkout-footer {
+        text-align: right;
+    }
+
+    .block-newletter {
+        width: 100%;
+        margin-top: 30px;
+
+        .block-title {
+            float: left;
+            line-height: 40px;
+            font-size: 123.07%;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .content {
+            margin-left: 30px;
+            float: left;
+
+            input {
+                height: 40px;
+                min-width: 320px;
+                padding-left: 20px;
+                float: left;
+                margin-bottom: 0;
+                border: none;
+                background: rgba(255, 255, 255, 0.1);
+                color: #ccc;
+            }
+
+            .button {
+                height: 40px;
+                width: 50px;
+                position: relative;
+                background: #f7cd45;
+                float: left;
+                margin-bottom: 0;
+                padding: 0;
+                border-radius: 0;
+                border: 0;
+                font-size: 24px;
+                line-height: 40px;
+                padding-bottom: 6px;
+
+                .fa {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .style_copy {
+        float: left;
+        color: #ccc;
+        font-size: 100%;
+        margin-bottom: 50px;
+        margin-top: 27px;
+    }
+
+    .block-fllow-us {
+        float: right;
+        margin-top: 30px;
+
+        h2 {
+            float: left;
+            font-size: 123.07%;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 40px;
+        }
+
+        ul {
+            float: left;
+            margin-left: 27px;
+        }
+    }
+}

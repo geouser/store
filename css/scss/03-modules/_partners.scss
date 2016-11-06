@@ -1,0 +1,40 @@
+.partners-slider {
+    padding-top: 0;
+    text-align: center;
+
+    .partner__image {
+        border: 1px solid #e8e8e8;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin: 0 auto;
+        overflow: hidden;
+        outline: none;
+
+
+        img {
+            display: block;
+            vertical-align: middle;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            margin: 0 -2px;
+        }
+
+        &:hover {
+            border-color: $yellow;
+
+            img {
+                -webkit-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.partners {
+    padding: 50px 0;
+}
