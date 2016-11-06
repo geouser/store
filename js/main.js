@@ -92,7 +92,12 @@ jQuery(document).ready(function($) {
         }
     })
 
-
+    $('.product-submenu__small__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
+    $('.product-submenu__big__slider').slick({
+    });
 
     /*---------------------------
                                   MENU TOGGLE
