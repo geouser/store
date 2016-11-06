@@ -1,0 +1,132 @@
+.special-products {
+    padding: 50px 0;
+}
+
+
+.product--horizontal {
+    margin-bottom: 30px;
+
+    .inner {
+        -webkit-box-shadow: none 0px 0px #000000;
+        -moz-box-shadow: none 0px 0px #000000;
+        box-shadow: none 0px 0px #000000;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid #e8e8e8;
+        float: left;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .item-image {
+        margin: 0px 0px 9px 0px;
+        width: 33.5%;
+        overflow: visible;
+        position: relative;
+        border: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .product-info {
+        width: 56%;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .product-name {
+        text-align: left;
+    }
+
+    .price-box {
+        margin-bottom: 10px;
+    }
+
+
+    .rating {
+        float: left;
+
+        .ratings {
+            float: left;
+            height: 17px;
+        }
+
+        .rating-box {
+            background: url(../images/bkg_rating.png) repeat-x scroll 0px 6px transparent;
+            display: inline-block;
+            height: 17px;
+            position: relative;
+            vertical-align: middle;
+            width: 80px;
+            margin: 0 0;
+            float: left;
+
+            .rating {
+                background: url(../images/bkg_rating.png) repeat-x scroll 0px 100% transparent;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+            }
+        }
+
+        .rating-links {
+            float: left;
+            margin-top: 0;
+
+            a {
+                color: #999999;
+                margin: 0 5px;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+
+    .desc {
+        margin-top: 8px;
+        font-size: 100%;
+        color: #666666;
+        line-height: 20px;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    .item-btn {
+        padding-bottom: 20px;
+        margin-top: 17px;
+    }
+
+
+    .box-inner {
+        padding: 0;
+        padding-top: 10px;
+        left: 0;
+        right: 0;
+    }
+
+    .vt_quickview_handler {
+        width: 106px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    &:hover {
+        .inner {
+            box-shadow: none;
+        }
+
+        .box-inner {
+            box-shadow: none;
+        }
+    }
+}
