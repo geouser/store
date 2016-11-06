@@ -59,6 +59,13 @@ jQuery(document).ready(function($) {
         slidesPerRow: 4
     })
 
+    $('.posts-slider').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    })
+
 
     /*---------------------------
                                   Countdown
