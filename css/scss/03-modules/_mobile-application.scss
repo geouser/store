@@ -1,20 +1,50 @@
 .mobile-application {
     background: url(../images/bg-banner-home3.png) no-repeat center center fixed;
     background-size: cover;
-    padding-top: 15px;
+
+    @media (max-width: 991px) {
+        background-attachment: scroll;
+    }
+    
+
+    @media (max-width: 991px) {
+        padding: 130px 0;
+    }
 
     .row {
         position: relative;
         @extend %vertAlign;
 
+        @media (max-width: 991px) {
+            &:before {
+                display: none;
+            }
+        }
+
         img {
             margin-left: 70px;
+
+            @media (max-width: 991px) {
+                display: none;
+            }
         }
 
         .info {
             display: inline-block;
             vertical-align: middle;
-            padding-left: 70px;color: #fff;
+            padding-left: 70px;
+            color: #fff;
+
+            @media (max-width: 991px) {
+                padding-left: 0;
+                text-align: center;
+                width: 100%;
+                padding: 0 15px;
+
+                br {
+                    display: none;
+                }
+            }
 
             h3 {
                 font-size: 123%;

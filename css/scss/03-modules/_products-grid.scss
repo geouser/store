@@ -8,6 +8,10 @@
         position: relative;
         overflow: hidden;
 
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+
         img {
             display: block;
             width: 100%;
@@ -48,6 +52,10 @@
 
     .inner-bottom {
         margin-top: 30px;
+
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
 
         .info {
             top: 20px;

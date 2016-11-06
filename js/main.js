@@ -56,14 +56,50 @@ jQuery(document).ready(function($) {
         dots: false,
         arrows: true,
         rows: 2,
-        slidesPerRow: 4
+        slidesPerRow: 4,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesPerRow: 3,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesPerRow: 2,
+                }
+            },
+            {
+                breakpoint: 475,
+                settings: {
+                    slidesPerRow: 1,
+                }
+            },
+        ]
     })
 
     $('.posts-slider').slick({
         dots: false,
         arrows: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 475,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+
     })
 
     $('.partners-slider').slick({
@@ -72,7 +108,27 @@ jQuery(document).ready(function($) {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     })
 
 

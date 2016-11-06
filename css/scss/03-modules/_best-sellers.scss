@@ -10,6 +10,11 @@
             display: inline-block;
             margin: 0 3px;
 
+            @media (max-width: 500px) {
+                width: 45%;
+                margin: 10px 1%;
+            }
+
             .tab-button {
                 color: #666;
                 border: 1px solid #E8E8E8;
@@ -17,6 +22,19 @@
                 line-height: 46px;
                 outline: none;
                 text-decoration: none;
+
+                @media (max-width: 991px) {
+                    font-size: 100%;
+                    padding: 0 15px;
+                    height: 40px;
+                    line-height: 38px;
+                }
+
+                @media (max-width: 500px) {
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                }
 
                 &:hover {
                     border-color: $yellow;
@@ -245,6 +263,9 @@
         border-radius: 20px;
         padding: 8px 20px;
         color: #666;
+        font-size: 13px;
+        width: 120px;
+        text-align: center;
 
         &:hover {
             background-color: $yellow;
