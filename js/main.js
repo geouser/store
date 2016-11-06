@@ -16,9 +16,12 @@ jQuery(document).ready(function($) {
 
         $(window).on('load resize scroll', function(event) {
             event.preventDefault();
-            $element.toggleClass(className, $(window).scrollTop() >= 200);
+            $element.toggleClass('prepare', $(window).scrollTop() >= 120);
+            $element.toggleClass(className, $(window).scrollTop() >= 160);
         });
     });
+
+    $('li:has(ul)').addClass('hasSub');
 
     /*---------------------------
                                   Toggle search-bar
