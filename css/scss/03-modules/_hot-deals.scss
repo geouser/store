@@ -1,0 +1,50 @@
+.hot-deals {
+    background: url(../images/bg-hotdeals.png) no-repeat center center fixed;
+    background-size: cover;
+    padding: 130px 0;
+
+    .info {
+        text-align: left;
+
+        .title,
+        .subtitle {
+            color: #fff;
+            text-align: left;
+        }
+
+        .subtitle {
+            line-height: 24px;
+            color: #fff;
+            text-align: left;
+            font-size: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    .block-countdown {
+        margin: 23px 0 30px;
+
+
+        .countdown-section {
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #fff;
+            padding: 15px 0;
+            width: 80px;
+            border-radius: 4px;
+            text-align: center;
+            margin-right: 10px;
+
+            .countdown-amount {
+                display: block;
+                font-size: 140%;
+            }
+
+            .countdown-period {
+                display: block;
+                text-transform: uppercase;
+                font-size: 80%;
+            }
+        }
+    }
+}
