@@ -57,6 +57,7 @@ h2.title {
 .row-middle,
 .row-stretch,
 .row-bottom {
+    margin: 0 -15px;
     &:after,
     &:before {
         display: none;

@@ -60,6 +60,20 @@ jQuery(document).ready(function($) {
     })
 
 
+    /*---------------------------
+                                  Countdown
+    ---------------------------*/
+    if ( $('.block-countdown').length > 0 ) {
+        $('.block-countdown').each(function(index, el) {
+            var until = new Date($(this).attr('data-until'));
+            $(this).countdown({
+                until: until,
+                format: 'dHMS',
+                padZeroes: true
+            });
+        });
+    }
+
 
     /*---------------------------
                                   Tabs
