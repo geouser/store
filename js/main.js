@@ -31,6 +31,19 @@ jQuery(document).ready(function($) {
       }
 
     /*---------------------------
+                                  MENU TOGGLE
+    ---------------------------*/
+    $('.btn-sidebar, .close-menu').on('click', function() {
+        $('.header-menu').toggleClass('active');
+        if ($('header').hasClass('active')) {
+            $('body').css('overflow', 'hidden');
+        } else {
+            $('body').css('overflow', 'visible');
+        }
+    });
+
+
+    /*---------------------------
                                   Toggle search-bar
     ---------------------------*/
     $('.js-search-toggle').on('click', function(event) {
