@@ -42,6 +42,10 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('.style_mobile li').click(function(){
+        $(this).children('ul').slideToggle();
+    });
+
 
     /*---------------------------
                                   Toggle search-bar

@@ -451,6 +451,9 @@
         width: 100%;
         border-right: 1px solid #e8e8e8;
     }
+    .style_mobile li {
+        list-style-type: none;
+    }
     .style_mobile > li {
         float: left;
         height: 30px;
@@ -639,7 +642,6 @@
     }
     .style_mobile > li.block_4 > ul li a img {
         margin-right: 8px;
-        margin-top: 10px;
     }
     .style_mobile > li.block_4 > div > span > span {
         display: none;
