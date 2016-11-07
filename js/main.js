@@ -23,6 +23,30 @@ jQuery(document).ready(function($) {
 
     $('li:has(ul)').addClass('hasSub');
 
+    if ($(window).width() < 901) {
+        $('.hasSub > a').click(function(event){
+            event.preventDefault();
+            $(this).siblings('.sub-menu').slideToggle();
+        });
+      }
+
+    /*---------------------------
+                                  MENU TOGGLE
+    ---------------------------*/
+    $('.btn-sidebar, .close-menu').on('click', function() {
+        $('.header-menu').toggleClass('active');
+        if ($('header').hasClass('active')) {
+            $('body').css('overflow', 'hidden');
+        } else {
+            $('body').css('overflow', 'visible');
+        }
+    });
+
+    $('.style_mobile li').click(function(){
+        $(this).children('ul').slideToggle();
+    });
+
+
     /*---------------------------
                                   Toggle search-bar
     ---------------------------*/
