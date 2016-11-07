@@ -23,6 +23,13 @@ jQuery(document).ready(function($) {
 
     $('li:has(ul)').addClass('hasSub');
 
+    if ($(window).width() < 901) {
+        $('.hasSub > a').click(function(event){
+            event.preventDefault();
+            $(this).siblings('.sub-menu').slideToggle();
+        });
+      }
+
     /*---------------------------
                                   Toggle search-bar
     ---------------------------*/

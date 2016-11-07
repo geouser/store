@@ -5,19 +5,24 @@
     left: 0;
     right: 0;
     width: 100%;
+    @include m900 {
+        top: 0;
+    }
     &.prepare {
         top: -65px;
     }
-    &.scrolled {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #333;
-            -webkit-transition: all 0.3s ease-in-out 0s;
-        -moz-transition: all 0.3s ease-in-out 0s;
-        -o-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+    @media (max-width: 991px) {
+        &.scrolled {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+                -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            -o-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
     }
 }
 
@@ -29,6 +34,25 @@
 }
 
 .header-menu {
+    @include m900 {
+        position: fixed;
+        width: 230px;
+        background-color: #312c29;
+        padding: 30px 0px;
+        z-index: 9999;
+        top: 0;
+        left: -240px;
+        height: 100%;
+        overflow: scroll;
+        -webkit-transition: all .4s;
+           -moz-transition: all .4s;
+            -ms-transition: all .4s;
+             -o-transition: all .4s;
+                transition: all .4s;
+        &.active {
+            left: 0;
+        }
+    }
     > ul {
         list-style: none;
 
@@ -36,6 +60,13 @@
             display: inline-block;
             margin-right: 5px;
             position: relative;
+            @include m900 {
+                display: block;
+                text-align: left;
+                color: #ccc;
+                position: relative;
+                margin-right: 0;
+            }
             &:after {
                 width: 100%;
                 height: 14px;
@@ -57,29 +88,51 @@
                 -o-transition: background-color 0.3s ease;
                 transition: background-color 0.3s ease;
                 font-family: $osb;
-
+                @include m900 {
+                    font-size: 13px;
+                    line-height: 30px;
+                    text-transform: none;
+                    font-family: 'open_sansregular';
+                    padding-left: 32px;
+                    color: #ccc;
+                    &:after {
+                        content: "\f0da";
+                        font-size: 14px;
+                        font-family: "FontAwesome";
+                        color: #ccc;
+                        position: absolute;
+                        top: 0px;
+                        left: 20px;
+                        line-height: 10px;
+                        top: 17px;
+                    }
+                }
+                @media (min-width: 901px) {
+                     &:hover {
+                        text-decoration: none;
+                        background-color: #ffc300; 
+                    }
+                }
+            }
+            @media (min-width: 901px) {
+                &.active,
                 &:hover {
-                    text-decoration: none;
-                    background-color: #ffc300; 
+                    > a {
+                        text-decoration: none;
+                        background-color: #ffc300; 
+                    }
                 }
-            }
-            &.active,
-            &:hover {
-                > a {
-                    text-decoration: none;
-                    background-color: #ffc300; 
-                }
-            }
-            &:hover {
-                .sub-menu {
-                    top: 45px;
-                    opacity: 1;
-                    visibility: visible;
-                }
-                .product-submenu {
-                    opacity: 1;
-                    visibility: visible;
-                    top: 50px;
+                 &:hover {
+                    .sub-menu {
+                        top: 45px;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    .product-submenu {
+                        opacity: 1;
+                        visibility: visible;
+                        top: 50px;
+                    }
                 }
             }
             >.sub-menu {
@@ -96,20 +149,61 @@
                 transition: all 0.3s ease-in-out 0s;
                 visibility: hidden;
                 background-color: #FFF;
+                @include m900 {
+                    display: none;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin: 10px 0;
+                    background: #4a423b;
+                    visibility: visible;
+                    opacity: 1;
+                    min-width: 100%;
+                    position: static;
+                    -webkit-box-shadow: none;
+                            box-shadow: none;
+                }
                 ul {
                     min-width: 250px;
                     padding: 0 30px 10px 30px;
                     float: left;
                     background: #fff;
                     list-style-type: none;
+                    @include m900 {
+                        background: transparent;
+                        width: 100%;
+                        min-width: 100%;
+                        float: none;
+                        padding: 0 0px 10px 0px;
+                    }
                     li {
                         position: relative;
                         border-bottom: 1px solid #e8e8e8;
+                        @include m900 {
+                            border: none;
+                        }
                         a {
                             line-height: 40px;
                             display: block;
                             color: #666666;
                             position: relative;
+                            @include m900 {
+                                color: #ccc;
+                                padding-left: 42px;
+                                position: relative;
+                                width: 100%;
+                                padding-right: 5px;
+                                font-family: 'open_sansregular';
+                                font-size: 13px;
+                                &:before {
+                                    content: "\f111";
+                                    font-family: "FontAwesome";
+                                    font-size: 4px;
+                                    color: #ccc;
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 30px;
+                                }
+                            }
                         }
                         &.hasSub:after {
                             color: #666;
@@ -123,20 +217,25 @@
                             margin-top: -10px;
                             width: 19px;
                             z-index: 9;
+                            @include m900 {
+                                display: none;
+                            }
                         }
                         &:last-child {
                             border-bottom: none;
                         }
-                        &:hover {
-                            > a, &:after {
-                                color: $yellow;
-                            }
-                            .sub-menu {
-                                left: 190px;
-                                opacity: 1;
-                                visibility: visible;
-                                -webkit-box-shadow: 0 0 6px rgba(0,0,0,.4);
-                                        box-shadow: 0 0 6px rgba(0,0,0,.4);
+                        @media (min-width: 901px) {
+                            &:hover {
+                                > a, &:after {
+                                    color: $yellow;
+                                }
+                                .sub-menu {
+                                    left: 190px;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.4);
+                                            box-shadow: 0 0 6px rgba(0,0,0,.4);
+                                }
                             }
                         }
                     }
@@ -153,9 +252,25 @@
                     -o-transition: all 0.3s ease-in-out 0s;
                     transition: all 0.3s ease-in-out 0s;
                     z-index: 10;
+                    @include m900 {
+                        display: none;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        margin: 10px 0;
+                        background: #312c29;
+                        visibility: visible;
+                        opacity: 1;
+                        position: static;
+                        
+                    }
                     li {
                         a {
-                            
+                            @include m900 {
+                                padding-left: 52px;
+                                &:before {
+                                    left: 40px;
+                                }
+                            }
                         }
                         &:hover {
                             a {
@@ -169,7 +284,11 @@
     }
 }
 
+.product-submenu {
+    display: none;
+}
 
+@media (min-width: 901px) {
 .product-submenu {
     width: 1170px;
     padding: 0;
@@ -186,6 +305,7 @@
     padding: 30px 0 20px 0;
     opacity: 0;
     visibility: hidden;
+    display: block;
     &__big {
         padding: 0 30px;
         width: 590px;
@@ -240,6 +360,18 @@
         right: 11%;
         left: auto;
     }
+} 
+}
+
+.logo {
+    @include m900 {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        a {
+            display: inline-block;
+        }
+    }
 }
 
 .search {
@@ -251,12 +383,23 @@
     .fa-search {
         cursor: pointer;
     }
+    @include m900 {
+        & > .fa-search {display: none;}
+    }
 
     .search-bar {
         position: absolute;
         right: 0;
         bottom: -58px;
         width: 312px;
+        max-width: 100%;
+        @include m900 {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            margin: 0px auto;
+        }
 
         margin-bottom: -20px;
         visibility: hidden;
@@ -288,6 +431,9 @@
             border: 0;
             color: #666;
             padding: 0 15px;
+            @include m360 {
+                width: 248px;
+            }
         }
 
         .button-search {

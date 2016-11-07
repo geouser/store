@@ -1,6 +1,11 @@
 .footer {
     background-color: #1c1c1c;
     position: relative;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
 
     ul {
         list-style: none;
@@ -11,13 +16,19 @@
     }
 
     .inner-top {
-
+        @media (max-width: 991px) {
+            padding-bottom: 20px;
+        }
     }
 
     .inner-center {
         border-top: 1px solid rgba(255, 255, 255, .1);
         border-bottom: 1px solid rgba(255, 255, 255, .1);
         padding: 30px 0;
+
+        @media (max-width: 991px) {
+            padding: 5px 0;
+        }
 
         h3 {
             font-size: 123.07%;
@@ -56,6 +67,14 @@
                     border-bottom: 1px dotted #fff;
                     opacity: 1;
                 }
+            }
+
+            
+        }
+
+        div.item {
+            @media (max-width: 991px) {
+                margin: 25px 0;
             }
         }
 
@@ -98,6 +117,11 @@
         display: inline-block;
         vertical-align: middle;
 
+        @media (max-width: 991px) {
+            width: 100%;
+            padding: 20px 0;
+        }
+
         .menu-item {
             &:not(:last-child):after {
                 content: "-";
@@ -125,6 +149,10 @@
 
     .checkout-footer {
         text-align: right;
+
+        @media (max-width: 991px) {
+            text-align: center;
+        }
     }
 
     .block-newletter {
@@ -143,6 +171,11 @@
             margin-left: 30px;
             float: left;
 
+            @media (max-width: 550px) {
+                width: 100%;
+                margin-left: 0;
+            }
+
             input {
                 height: 40px;
                 min-width: 320px;
@@ -152,6 +185,12 @@
                 border: none;
                 background: rgba(255, 255, 255, 0.1);
                 color: #ccc;
+
+                @media (max-width: 550px) {
+                    width: -webkit-calc(100% - 50px);
+                    width: calc(100% - 50px);
+                    min-width: 0;
+                }
             }
 
             .button {
@@ -187,6 +226,16 @@
         float: right;
         margin-top: 30px;
 
+        @media (max-width: 991px) {
+            float: left;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 550px) {
+            width: 100%;
+        }
+
         h2 {
             float: left;
             font-size: 123.07%;
@@ -199,6 +248,12 @@
         ul {
             float: left;
             margin-left: 27px;
+
+            @media (max-width: 550px) {
+                width: 100%;
+                margin-left: 0;
+                text-align: left;
+            }
         }
     }
 }
