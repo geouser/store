@@ -76,6 +76,10 @@
             @media (max-width: 991px) {
                 margin: 25px 0;
             }
+
+            @media (max-width: 500px) {
+                width: 100%;
+            }
         }
 
         .contact-us {

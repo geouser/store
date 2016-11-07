@@ -39,6 +39,17 @@ jQuery(document).ready(function($) {
         event.preventDefault();
         $('.products-grid').css('margin-top', $(this).height());
     });
+
+
+    /*---------------------------
+                                  Accordion
+    ---------------------------*/
+    if ( $('#accordion').length > 0 ) {
+        $('#accordion').accordion({
+            heightStyle: "content",
+            collapsible: true
+        })
+    }
       
 
 
