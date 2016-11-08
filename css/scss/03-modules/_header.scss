@@ -11,7 +11,7 @@
     &.prepare {
         top: -65px;
     }
-    @media (max-width: 991px) {
+    @media (min-width: 991px) {
         &.scrolled {
             position: fixed;
             top: 0;
