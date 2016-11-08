@@ -1,4 +1,85 @@
 .map {
     height: 352px;
     margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+        height: 200px;
+    }
+}
+
+.contact-col {
+    font-size: 13px;
+    margin-bottom: 100px;
+
+    h2 {
+        font-size: 123.07%;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    & > p {
+        margin: 10px 0 45px;
+    }
+}
+
+
+.contact-form {
+    label {
+        color: #666666;
+        margin-bottom: 9px;
+        display: block;
+        position: relative;
+        font-weight: normal;
+        font-size: 13px;
+
+        &.required:after {
+            content: '*';
+            color: red;
+            margin: 0 3px;
+            font-style: italic;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        border: 1px solid #ddd;
+        padding: 0 6px;
+        font-size: 13px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+        height: 38px;
+    }
+
+    textarea {
+        height: 150px;
+        resize: none;
+        padding: 6px;
+    }
+
+    .form-button {
+        padding: 0 20px;
+        color: #fff;
+        border: 0;
+        border-radius: 20px;
+        height: 38px;
+        background-color: #666;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $yellow;
+        }
+    }
 }
