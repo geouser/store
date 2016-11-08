@@ -74,7 +74,35 @@ jQuery(document).ready(function($) {
             collapsible: true
         })
     }
+
+    $('.js-toggle-accordion').on('click', function(event) {
+        event.preventDefault();
+        $(this).toggleClass('active')
+        $(this).siblings('.js-accordion-container').slideToggle();
+    });
       
+
+
+    /*---------------------------
+                                  Range slider (Price slider)
+    ---------------------------*/
+    $( ".range-slider" ).each(function(index, el) {
+        var slider = $(this);
+        slider.slider({
+            range: true,
+            min: slider.attr('data-min')*1,
+            max: slider.attr('data-max')*1,
+            values: [ slider.attr('data-start')*1, slider.attr('data-end')*1 ],
+            step: slider.attr('data-step')*1,
+            slide: function( event, ui ) {
+                slider.siblings('.range-slider-top').find('.price-from').val( ui.values[ 0 ] );
+                slider.siblings('.range-slider-top').find('.price-to').val( ui.values[ 1 ] );
+            }
+        });
+
+        slider.siblings( '.range-slider-top' ).find( '.price-from' ).val( slider.slider( "values", 0 ) );
+        slider.siblings( '.range-slider-top' ).find( '.price-to' ).val( slider.slider( "values", 1 ) );
+    });
 
 
     /*---------------------------
@@ -164,6 +192,13 @@ jQuery(document).ready(function($) {
                 }
             },
         ]
+    })
+
+    $('.sale-slider').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000
     })
 
 

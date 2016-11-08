@@ -110,6 +110,14 @@
     &-content {
         border-top: 1px solid #ccc;
         padding: 15px;
+
+        p {
+            margin: 0;
+        }
+
+        p:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 }
 
@@ -141,12 +149,22 @@
     &__image {
         display: block;
         margin-bottom: 8px;
+        overflow: hidden;
 
         img {
             width: 100%;
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
+        }
+
+        &:hover {
+            img {
+                -webkit-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+                transform: scale(1.05);
+            }
         }
     }
 
