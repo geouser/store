@@ -30,7 +30,7 @@
         }
 
         &:after {
-            content: '\f067';
+            content: '\f068';
             font-family: "FontAwesome";
             right: 20px;
             position: absolute;
@@ -45,7 +45,7 @@
 
         &.active {
             &:after {
-                content: '\f068';
+                content: '\f067';
             }
         }
     }
@@ -225,8 +225,8 @@
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
             position: absolute;
-            right: 0;
-            bottom: 0;
+            right: -1px;
+            bottom: -1px;
             box-sizing: border-box;
             text-align: center;
             opacity: 0;

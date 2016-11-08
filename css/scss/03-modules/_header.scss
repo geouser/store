@@ -1,17 +1,17 @@
 .site-header {
-    z-index: 5;
+    z-index: 100;
     position: absolute;
     top: 65px;
     left: 0;
     right: 0;
     width: 100%;
-    @include m900 {
+     @media (max-width: 1000px) {
         top: 0;
     }
     &.prepare {
         top: -65px;
     }
-    @media (min-width: 991px) {
+    @media (min-width: 1001px) {
         &.scrolled {
             position: fixed;
             top: 0;
@@ -34,7 +34,7 @@
 }
 
 .header-menu {
-    @include m900 {
+     @media (max-width: 1000px) {
         position: fixed;
         width: 230px;
         background-color: #312c29;
@@ -59,7 +59,7 @@
             display: inline-block;
             margin-right: 5px;
             position: relative;
-            @include m900 {
+             @media (max-width: 1000px) {
                 display: block;
                 text-align: left;
                 color: #ccc;
@@ -87,7 +87,7 @@
                 -o-transition: background-color 0.3s ease;
                 transition: background-color 0.3s ease;
                 font-family: $osb;
-                @include m900 {
+                 @media (max-width: 1000px) {
                     font-size: 13px;
                     line-height: 30px;
                     text-transform: none;
@@ -106,14 +106,14 @@
                         top: 17px;
                     }
                 }
-                @media (min-width: 901px) {
+                @media (min-width: 1001px) {
                      &:hover {
                         text-decoration: none;
                         background-color: #ffc300; 
                     }
                 }
             }
-            @media (min-width: 901px) {
+            @media (min-width: 1001px) {
                 &.active,
                 &:hover {
                     > a {
@@ -148,7 +148,7 @@
                 transition: all 0.3s ease-in-out 0s;
                 visibility: hidden;
                 background-color: #FFF;
-                @include m900 {
+                 @media (max-width: 1000px) {
                     display: none;
                     padding-top: 10px;
                     padding-bottom: 10px;
@@ -167,7 +167,7 @@
                     float: left;
                     background: #fff;
                     list-style-type: none;
-                    @include m900 {
+                     @media (max-width: 1000px) {
                         background: transparent;
                         width: 100%;
                         min-width: 100%;
@@ -177,7 +177,7 @@
                     li {
                         position: relative;
                         border-bottom: 1px solid #e8e8e8;
-                        @include m900 {
+                         @media (max-width: 1000px) {
                             border: none;
                         }
                         a {
@@ -185,7 +185,7 @@
                             display: block;
                             color: #666666;
                             position: relative;
-                            @include m900 {
+                             @media (max-width: 1000px) {
                                 color: #ccc;
                                 padding-left: 42px;
                                 position: relative;
@@ -223,7 +223,7 @@
                         &:last-child {
                             border-bottom: none;
                         }
-                        @media (min-width: 901px) {
+                        @media (min-width: 1001px) {
                             &:hover {
                                 > a, &:after {
                                     color: $yellow;
@@ -251,7 +251,7 @@
                     -o-transition: all 0.3s ease-in-out 0s;
                     transition: all 0.3s ease-in-out 0s;
                     z-index: 10;
-                    @include m900 {
+                     @media (max-width: 1000px) {
                         display: none;
                         padding-top: 10px;
                         padding-bottom: 10px;
@@ -264,7 +264,7 @@
                     }
                     li {
                         a {
-                            @include m900 {
+                             @media (max-width: 1000px) {
                                 padding-left: 52px;
                                 &:before {
                                     left: 40px;
@@ -287,7 +287,7 @@
     display: none;
 }
 
-@media (min-width: 901px) {
+@media (min-width: 1001px) {
 .product-submenu {
     width: 1170px;
     padding: 0;
@@ -363,7 +363,7 @@
 }
 
 .logo {
-    @include m900 {
+     @media (max-width: 1000px) {
         display: block;
         margin: 20px auto;
         text-align: center;
@@ -382,7 +382,7 @@
     .fa-search {
         cursor: pointer;
     }
-    @include m900 {
+     @media (max-width: 1000px) {
         & > .fa-search {display: none;}
     }
 
@@ -391,12 +391,17 @@
         right: 0;
         bottom: -58px;
         width: 312px;
+
         @include m900 {
             position: static;
             opacity: 1;
             visibility: visible;
             display: block;
             margin: 0px auto;
+        }
+
+        @media (max-width: 350px) {
+            width: 100%;
         }
 
         margin-bottom: -20px;
@@ -447,7 +452,7 @@
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     .style_mobile {
         float: left;
         width: 100%;
