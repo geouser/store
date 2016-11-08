@@ -339,3 +339,43 @@
         }
     }
 }
+
+.pagination {
+    @extend %clearfix;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    .page {
+        float: left;
+        border: 1px solid #e8e8e8;
+        padding: 5px 10px;
+        color: #666;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        font-size: 13px;
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+            padding: 4px 8px;
+        }
+
+        &:hover {
+            background-color: $yellow;
+            color: #fff;
+            border-color: $yellow;
+        }
+
+        &.prev-page {
+            .fa {
+                margin-right: 5px;
+            }
+        }
+        &.next-page {
+            .fa {
+                margin-left: 5px;
+            }
+        }
+    }
+}
