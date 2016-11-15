@@ -1,5 +1,5 @@
 .site-header {
-    z-index: 5;
+    z-index: 100;
     position: absolute;
     top: 65px;
     left: 0;
@@ -391,13 +391,17 @@
         right: 0;
         bottom: -58px;
         width: 312px;
-        max-width: 100%;
-        @media (max-width: 1000px) {
+
+        @include m900 {
             position: static;
             opacity: 1;
             visibility: visible;
             display: block;
             margin: 0px auto;
+        }
+
+        @media (max-width: 350px) {
+            width: 100%;
         }
 
         margin-bottom: -20px;
