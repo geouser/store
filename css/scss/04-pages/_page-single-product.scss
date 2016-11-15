@@ -1,0 +1,48 @@
+.product-view {
+    width: 100%;
+    @include flex($alignI: flex-start);
+    border: 1px solid #e8e8e8;
+    padding: 15px 20px;
+
+    .product-image {
+        width: 350px;
+    }
+
+    .main-product-slider {
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            a {
+                display: inline-block;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            img {
+                vertical-align: bottom;
+            }
+
+            .easyzoom-flyout {
+                position:absolute;
+                z-index: 100;
+                overflow: hidden;
+                background: #FFF;
+                top: 0;
+                left: 100%;
+                margin-left: 20px;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+            }
+        }
+    }
+}

@@ -203,6 +203,22 @@ jQuery(document).ready(function($) {
 
     $('.sidebarSlider').slick();
 
+    $('.thumbnail-product-slider').slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.main-product-slider',
+        focusOnSelect: true
+    })
+
+
+    /*---------------------------
+                                  Easy zoom
+    ---------------------------*/
+    var $easyzoom = $('.easy-zoom').easyZoom();
+
+
     /*---------------------------
                                   Countdown
     ---------------------------*/
