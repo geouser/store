@@ -584,8 +584,167 @@
                                 </form>
 
                             </div> <!-- end product details -->
-                        </div> <!-- end product view -->
 
+                            <div class="tabs productInfoTabs">
+                                <ul class="productInfoTabs__nav">
+                                    <li><a href="#info-1">Description</a></li>
+                                    <li><a href="#info-2">Additional information</a></li>
+                                    <li><a href="#info-3">Reviews</a></li>
+                                    <li><a href="#info-4">Static block</a></li>
+                                </ul>
+                                <div class="productInfoTabs__tab" id="info-1">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dicta dolorum, cupiditate esse non ad repudiandae itaque quas quod tempora, sunt, maxime adipisci magni optio aspernatur, perspiciatis minima dignissimos voluptatibus.</p>
+                                </div><!-- end tab 1 -->
+
+                                <div class="productInfoTabs__tab" id="info-2">
+                                    <table class="data-table" >
+                                        <tbody>
+                                           <tr>
+                                                <th><strong>Style</strong></th>
+                                                <td class="data">No</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Material</strong></th>
+                                                <td class="data">No</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Color</strong></th>
+                                                <td class="data">White</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Occasion</strong></th>
+                                                <td class="data">Casual</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Type</strong></th>
+                                                <td class="data">Shirts</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Size</strong></th>
+                                                <td class="data">M</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Length</strong></th>
+                                                <td class="data">Knee Length</td>
+                                            </tr>
+                                                    <tr>
+                                                <th><strong>Gender</strong></th>
+                                                <td class="data">Male</td>
+                                            </tr>
+                                                </tbody>
+                                    </table>
+                                </div><!-- end tab 2 -->
+
+                                <div class="productInfoTabs__tab" id="info-3">
+                                    <div class="pager">
+                                        <p class="amount">
+                                            <strong>1 Item(s)</strong>
+                                        </p>
+                                        <div class="limiter">
+                                            <label>Show</label>
+                                            <select onchange="setLocation(this.value)">
+                                                <option value="10" selected="selected">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                            </select>
+                                            per page
+                                        </div>
+                                    </div>
+                                    <div class="review">
+                                        <p>Review by <span>7uptheme</span></p>
+                                        <table class="ratings-table">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Quality</th>
+                                                    <td>
+                                                        <div class="rating-box">
+                                                            <div class="rating" style="width:100%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Price</th>
+                                                    <td>
+                                                        <div class="rating-box">
+                                                            <div class="rating" style="width:60%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Value</th>
+                                                    <td>
+                                                        <div class="rating-box">
+                                                            <div class="rating" style="width:80%;"></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate rerum quam tempore ratione sit maxime aliquam, aliquid eum earum doloremque numquam atque fugit quas est pariatur ullam, eveniet dolorum.</p>
+                                    </div>
+                                    <h2>Write Your Own Review</h2>
+
+                                    <form action="" class="reviewForm">
+                                        <table class="data-table" id="product-review-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>&nbsp;</th>
+                                                    <th><span class="nobr">1 star</span></th>
+                                                    <th><span class="nobr">2 stars</span></th>
+                                                    <th><span class="nobr">3 stars</span></th>
+                                                    <th><span class="nobr">4 stars</span></th>
+                                                    <th><span class="nobr">5 stars</span></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                             <tr>
+                                                <th>Price</th>
+                                                <td class="value"><input type="radio" name="ratings[3]" id="Price_1" value="11" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[3]" id="Price_2" value="12" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[3]" id="Price_3" value="13" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[3]" id="Price_4" value="14" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[3]" id="Price_5" value="15" class="radio" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Value</th>
+                                                <td class="value"><input type="radio" name="ratings[2]" id="Value_1" value="6" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[2]" id="Value_2" value="7" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[2]" id="Value_3" value="8" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[2]" id="Value_4" value="9" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[2]" id="Value_5" value="10" class="radio" /></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quality</th>
+                                                <td class="value"><input type="radio" name="ratings[1]" id="Quality_1" value="1" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[1]" id="Quality_2" value="2" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[1]" id="Quality_3" value="3" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[1]" id="Quality_4" value="4" class="radio" /></td>
+                                                <td class="value"><input type="radio" name="ratings[1]" id="Quality_5" value="5" class="radio" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <fieldset>
+                                        <label for="nickname"><i>*</i>Nickname</label>
+                                        <input type="text" name="nickname">
+
+                                        <label for="Summary"><i>*</i>Summary of Your Review</label>
+                                        <input type="text" name="Summary">
+
+                                        <label for="Review"><i>*</i>Review</label>
+                                        <textarea name="Review" id="" cols="30" rows="10"></textarea>
+
+                                        <button type="submit">Submit review</button>
+                                    </fieldset>
+                                </form>
+
+                                </div><!-- end tab 3 -->
+
+                                <div class="productInfoTabs__tab" id="info-4">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dicta dolorum, cupiditate esse non ad repudiandae itaque quas quod tempora, sunt, maxime adipisci magni optio aspernatur, perspiciatis minima dignissimos voluptatibus.</p>
+                                </div>
+
+                            </div>                    
                     </main> <!-- end products -->
 
                 </div> <!-- end row -->
