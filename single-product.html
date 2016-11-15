@@ -444,154 +444,262 @@
                     <main class="products col-lg-9 col-md-9 col-sm-12">
                         
                         <div class="product-view">
+                        
                             <div class="product-image">
                                 <div class="main-product-slider">
-                                    <div class="slide">
-                                        <!-- img src - image thumbnail 350*350, img data-zoom-image - original image size -->
-                                        <img src="images/product.png" data-zoom-image="images/product.png" alt="" class="zoom-image">
+                                    <div class="slide" data-slide="1">
+                                        <!--a href - original size; img src - image thumbnail 350*350; img data-zoom-image - original image size -->
+                                        <a href="images/product.png">
+                                            <img src="images/product.png" data-zoom-image="images/product.png" alt="" class="zoom-image">
+                                        </a>
                                     </div>
-                                    <div class="slide">
-                                        <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-zoom-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" alt="" class="zoom-image">
+                                    <div class="slide" data-slide="2">
+                                        <a href="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png">
+                                            <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-zoom-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" alt="" class="zoom-image">
+                                        </a>
                                     </div>
                                 </div>
                                 <p class="slider-title">Click to popup images</p>
                                 <div class="thumbnail-product-slider" id="gallery">
-                                    <!-- a data-image - image-thumbnail 350*350, data-zoom-image - original size, img src - image thumbnail 100*100 -->
-                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
+                                    <!-- a data-image - image-thumbnail 350*350; data-zoom-image - original size; img src - image thumbnail 100*100 -->
+                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png" data-slide="1">
                                         <img src="images/product-min.png" alt="" class="thumbnail">
                                     </a>
-                                    <a href="#" class="slide" data-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-zoom-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png">
+                                    <a href="#" class="slide" data-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-zoom-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-slide="2">
                                         <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/thumbnail/100x100/9df78eab33525d08d6e5fb8d27136e95/e/l/elec1.png" alt="" class="thumbnail">
-                                    </a>
-                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
-                                        <img src="images/product-min.png" alt="" class="thumbnail">
-                                    </a>
-                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
-                                        <img src="images/product-min.png" alt="" class="thumbnail">
-                                    </a>
-                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
-                                        <img src="images/product-min.png" alt="" class="thumbnail">
                                     </a>
                                 </div>
                             </div> <!-- end product image -->
 
                             <div class="product-details">
-                                
+                                <h1 class="product-name">Smart Phone Addon 2</h1>
+                                <div class="ratings">
+                                    <div class="rating-box">
+                                        <div class="rating" style="width:50%"></div>
+                                    </div>
+                                    <p class="rating-links">
+                                        <a href="#">(5)</a> 
+                                    </p>
+                                </div>
+                                <p class="product-code"><label>Product Code:</label> msj006c-Royal Blue-M</p>
+                                <p class="in-stock"><label>Availability:</label> In stock</p>
+
+                                <form action="">
+                                    <table class="order-form-table">
+                                        <colgroup>
+                                            <col class="col-label">
+                                            <col class="col-value">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>Price:</td>
+                                                <td><span class="regular-price">$160.00</span><span class="old-price">$180</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Color:</td>
+                                                <td>
+                                                    <ul class="color-box">
+                                                        <li class="color-checkbox">
+                                                            <input type="radio" name="color" id="color-1" value="">
+                                                            <label for="color-1" style="background-color: white;"></label>
+                                                        </li>
+                                                        <li class="color-checkbox">
+                                                            <input type="radio" name="color" id="color-2" value="">
+                                                            <label for="color-2" style="background-color: black;"></label>
+                                                        </li>
+                                                        <li class="color-checkbox">
+                                                            <input type="radio" name="color" id="color-3" value="">
+                                                            <label for="color-3" style="background-color: brown;"></label>
+                                                        </li>
+                                                        <li class="color-checkbox">
+                                                            <input type="radio" name="color" id="color-4" value="">
+                                                            <label for="color-4" style="background-color: blue;"></label>
+                                                        </li>
+                                                        <li class="color-checkbox">
+                                                            <input type="radio" name="color" id="color-5" value="" checked="">
+                                                            <label for="color-5" style="background-color: green;"></label>
+                                                        </li>
+                                                        <li class="color-checkbox">
+                                                            <input type="radio" name="color" id="color-6" value="">
+                                                            <label for="color-6" style="background-color: pink;"></label>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sizes:</td>
+                                                <td>
+                                                    <ul class="inline-checkbox">
+                                                        <li class="custom-checkbox">
+                                                            <input type="radio" name="size" value="" id="size-1">
+                                                            <label for="size-1">XS</label>
+                                                        </li>
+                                                        <li class="custom-checkbox">
+                                                            <input type="radio" name="size" value="" id="size-2">
+                                                            <label for="size-2">S</label>
+                                                        </li>
+                                                        <li class="custom-checkbox">
+                                                            <input type="radio" name="size" value="" id="size-3" checked="">
+                                                            <label for="size-3">M</label>
+                                                        </li>
+                                                        <li class="custom-checkbox">
+                                                            <input type="radio" name="size" value="" id="size-4">
+                                                            <label for="size-4">L</label>
+                                                        </li>
+                                                        <li class="custom-checkbox">
+                                                            <input type="radio" name="size" value="" id="size-5">
+                                                            <label for="size-5">XL</label>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Qty:</td>
+                                                <td>
+                                                    <div class="count-carusel">
+                                                        <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                                                        <input type="text" class="qty" value="1" name="qty">
+                                                        <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><button class="submit-form">Add To Cart</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <ul class="options-links">
+                                                        <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-hand-lizard-o" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-print" aria-hidden="true"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </form>
                             </div> <!-- end product details -->
 
-                            <div class="tabs productInfoTabs">
-                                <ul class="productInfoTabs__nav">
-                                    <li><a href="#info-1">Description</a></li>
-                                    <li><a href="#info-2">Additional information</a></li>
-                                    <li><a href="#info-3">Reviews</a></li>
-                                    <li><a href="#info-4">Static block</a></li>
-                                </ul>
-                                <div class="productInfoTabs__tab" id="info-1">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dicta dolorum, cupiditate esse non ad repudiandae itaque quas quod tempora, sunt, maxime adipisci magni optio aspernatur, perspiciatis minima dignissimos voluptatibus.</p>
-                                </div><!-- end tab 1 -->
+                        </div>   
 
-                                <div class="productInfoTabs__tab" id="info-2">
-                                    <table class="data-table" >
-                                        <tbody>
-                                           <tr>
-                                                <th><strong>Style</strong></th>
-                                                <td class="data">No</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Material</strong></th>
-                                                <td class="data">No</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Color</strong></th>
-                                                <td class="data">White</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Occasion</strong></th>
-                                                <td class="data">Casual</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Type</strong></th>
-                                                <td class="data">Shirts</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Size</strong></th>
-                                                <td class="data">M</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Length</strong></th>
-                                                <td class="data">Knee Length</td>
-                                            </tr>
-                                                    <tr>
-                                                <th><strong>Gender</strong></th>
-                                                <td class="data">Male</td>
-                                            </tr>
-                                                </tbody>
-                                    </table>
-                                </div><!-- end tab 2 -->
+                        <div class="productInfoTabs">
+                            <ul class="productInfoTabs__nav">
+                                <li><a href="#info-1">Description</a></li>
+                                <li><a href="#info-2">Additional information</a></li>
+                                <li><a href="#info-3">Reviews</a></li>
+                                <li><a href="#info-4">Static block</a></li>
+                            </ul>
+                            <div class="productInfoTabs__tab" id="info-1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dicta dolorum, cupiditate esse non ad repudiandae itaque quas quod tempora, sunt, maxime adipisci magni optio aspernatur, perspiciatis minima dignissimos voluptatibus.</p>
+                            </div><!-- end tab 1 -->
 
-                                <div class="productInfoTabs__tab" id="info-3">
-                                    <div class="pager">
-                                        <p class="amount">
-                                            <strong>1 Item(s)</strong>
-                                        </p>
-                                        <div class="limiter">
-                                            <label>Show</label>
-                                            <select onchange="setLocation(this.value)">
-                                                <option value="10" selected="selected">10</option>
-                                                <option value="20">20</option>
-                                                <option value="50">50</option>
-                                            </select>
-                                            per page
-                                        </div>
-                                    </div>
-                                    <div class="review">
-                                        <p>Review by <span>7uptheme</span></p>
-                                        <table class="ratings-table">
-                                            <tbody>
+                            <div class="productInfoTabs__tab" id="info-2">
+                                <table class="data-table" >
+                                    <tbody>
+                                       <tr>
+                                            <th><strong>Style</strong></th>
+                                            <td class="data">No</td>
+                                        </tr>
                                                 <tr>
-                                                    <th>Quality</th>
-                                                    <td>
-                                                        <div class="rating-box">
-                                                            <div class="rating" style="width:100%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                            <th><strong>Material</strong></th>
+                                            <td class="data">No</td>
+                                        </tr>
                                                 <tr>
-                                                    <th>Price</th>
-                                                    <td>
-                                                        <div class="rating-box">
-                                                            <div class="rating" style="width:60%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                            <th><strong>Color</strong></th>
+                                            <td class="data">White</td>
+                                        </tr>
                                                 <tr>
-                                                    <th>Value</th>
-                                                    <td>
-                                                        <div class="rating-box">
-                                                            <div class="rating" style="width:80%;"></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                            <th><strong>Occasion</strong></th>
+                                            <td class="data">Casual</td>
+                                        </tr>
+                                                <tr>
+                                            <th><strong>Type</strong></th>
+                                            <td class="data">Shirts</td>
+                                        </tr>
+                                                <tr>
+                                            <th><strong>Size</strong></th>
+                                            <td class="data">M</td>
+                                        </tr>
+                                                <tr>
+                                            <th><strong>Length</strong></th>
+                                            <td class="data">Knee Length</td>
+                                        </tr>
+                                                <tr>
+                                            <th><strong>Gender</strong></th>
+                                            <td class="data">Male</td>
+                                        </tr>
                                             </tbody>
-                                        </table>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate rerum quam tempore ratione sit maxime aliquam, aliquid eum earum doloremque numquam atque fugit quas est pariatur ullam, eveniet dolorum.</p>
-                                    </div>
-                                    <h2>Write Your Own Review</h2>
+                                </table>
+                            </div><!-- end tab 2 -->
 
-                                    <form action="" class="reviewForm">
-                                        <table class="data-table" id="product-review-table">
-                                            <thead>
-                                                <tr>
-                                                    <th>&nbsp;</th>
-                                                    <th><span class="nobr">1 star</span></th>
-                                                    <th><span class="nobr">2 stars</span></th>
-                                                    <th><span class="nobr">3 stars</span></th>
-                                                    <th><span class="nobr">4 stars</span></th>
-                                                    <th><span class="nobr">5 stars</span></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                             <tr>
+                            <div class="productInfoTabs__tab" id="info-3">
+                                <div class="pager">
+                                    <p class="amount">
+                                        <strong>1 Item(s)</strong>
+                                    </p>
+                                    <div class="limiter">
+                                        <label>Show</label>
+                                        <select onchange="setLocation(this.value)">
+                                            <option value="10" selected="selected">10</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                        </select>
+                                        per page
+                                    </div>
+                                </div>
+                                <div class="review">
+                                    <p>Review by <span>7uptheme</span></p>
+                                    <table class="ratings-table">
+                                        <tbody>
+                                            <tr>
+                                                <th>Quality</th>
+                                                <td>
+                                                    <div class="rating-box">
+                                                        <div class="rating" style="width:100%;"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Price</th>
+                                                <td>
+                                                    <div class="rating-box">
+                                                        <div class="rating" style="width:60%;"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Value</th>
+                                                <td>
+                                                    <div class="rating-box">
+                                                        <div class="rating" style="width:80%;"></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate rerum quam tempore ratione sit maxime aliquam, aliquid eum earum doloremque numquam atque fugit quas est pariatur ullam, eveniet dolorum.</p>
+                                </div>
+                                <h2>Write Your Own Review</h2>
+
+                                <form action="" class="reviewForm">
+                                    <table class="data-table" id="product-review-table">
+                                        <thead>
+                                            <tr>
+                                                <th>&nbsp;</th>
+                                                <th><span class="nobr">1 star</span></th>
+                                                <th><span class="nobr">2 stars</span></th>
+                                                <th><span class="nobr">3 stars</span></th>
+                                                <th><span class="nobr">4 stars</span></th>
+                                                <th><span class="nobr">5 stars</span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
                                                 <th>Price</th>
                                                 <td class="value"><input type="radio" name="ratings[3]" id="Price_1" value="11" class="radio" /></td>
                                                 <td class="value"><input type="radio" name="ratings[3]" id="Price_2" value="12" class="radio" /></td>
@@ -631,14 +739,15 @@
                                         <button type="submit">Submit review</button>
                                     </fieldset>
                                 </form>
+                            </div><!-- end tab 3 -->
 
-                                </div><!-- end tab 3 -->
+                            <div class="productInfoTabs__tab" id="info-4">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dicta dolorum, cupiditate esse non ad repudiandae itaque quas quod tempora, sunt, maxime adipisci magni optio aspernatur, perspiciatis minima dignissimos voluptatibus.</p>
+                            </div>
 
-                                <div class="productInfoTabs__tab" id="info-4">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dicta dolorum, cupiditate esse non ad repudiandae itaque quas quod tempora, sunt, maxime adipisci magni optio aspernatur, perspiciatis minima dignissimos voluptatibus.</p>
-                                </div>
+                        </div> <!-- end productInfoTabs -->
 
-                            </div>                    
+
                     </main> <!-- end products -->
 
                 </div> <!-- end row -->

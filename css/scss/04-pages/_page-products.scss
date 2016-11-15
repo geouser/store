@@ -62,7 +62,8 @@
 .custom-checkbox {
     margin: 3px 0;
 
-    input[type='checkbox'] {
+    input[type='checkbox'],
+    input[type='radio'] {
         display: none;
 
         &:checked + label {
@@ -118,7 +119,31 @@
         }
     }
 }
+.inline-checkbox {
+    list-style: none;
+    margin-bottom: -5px;
 
+    .custom-checkbox {
+        display: inline-block;
+        margin: 0 2px;
+
+        label {
+            border: 1px solid #ccc;
+            padding: 3px 10px;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        input[type='checkbox'],
+        input[type='radio'] {
+            &:checked + label {
+                border-color: $yellow;
+            }
+        }
+    }
+}
 
 .range-slider {
     width: 100%;
@@ -188,7 +213,8 @@
 }
 
 .color-checkbox {
-    input[type='checkbox'] {
+    input[type='checkbox'],
+    input[type='radio'] {
         display: none;
 
         &:checked + label {
@@ -487,11 +513,16 @@
 }
 
 .productInfoTabs {
+    margin-bottom: 40px;
     &__nav {
         width: 100%;
         border: 1px solid #e8e8e8;
         list-style-type: none;
         padding: 0 10px;
+
+        @media (max-width: 767px) {
+            padding: 15px 5px;
+        }
         li {
             display: inline-block;
             outline: none !important;
@@ -506,6 +537,12 @@
             outline: none !important;
             border: none !important;
             font-size: 16px;
+
+            @media (max-width: 767px) {
+                line-height: normal;
+                font-size: 14px;
+                padding: 0 5px;
+            }
         }
         li.ui-state-active a {
              color: #ffc300;
@@ -532,6 +569,10 @@
         width: 100%;
         line-height: 24px;
         background: #fff;
+
+        @media (max-width: 1199px) {
+            padding: 10px;
+        }
     }
     h2 {
         margin: 0;
@@ -545,7 +586,6 @@
         min-width: 120px;
         margin-top: 40px;
     }
-    font-family: "Open Sans";
 }
 
 .data-table {
@@ -553,6 +593,15 @@
     border: 1px solid #CCC;
     border-collapse: collapse;
     width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+
+    @media (max-width: 600px) {
+        font-size: 10px;
+    }
+    @media (max-width: 400px) {
+        font-size: 8px;
+    }
     tbody {
         th {
             text-align: left;
@@ -561,9 +610,9 @@
             padding: 8px;
         }
         td {
-                border-bottom: 1px solid #CCC;
-                border-right: 1px solid #CCC;
-                padding: 8px;
+            border-bottom: 1px solid #CCC;
+            border-right: 1px solid #CCC;
+            padding: 8px;
         }
         strong {
             font-weight: 600 !important;
@@ -642,6 +691,10 @@
     white-space: nowrap;
     color: #888;
     font-weight: 400;
+
+    @media (max-width: 400px) {
+        padding: 8px 1px;
+    }
 }
 #product-review-table td,
 #product-review-table th {
@@ -654,6 +707,11 @@
         @extend %clearfix;
         border: none;
         margin-top: 20px;
+
+        @media (max-width: 400px) {
+            width: 100%;
+            padding: 0;
+        }
     }
     label {
         font-size: 100%;
@@ -674,7 +732,7 @@
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
-        width: 240px;
+        width: 100%;
         display: block;
         margin-bottom: 20px;
     }
