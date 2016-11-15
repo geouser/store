@@ -201,6 +201,7 @@ jQuery(document).ready(function($) {
         autoplaySpeed: 3000
     })
 
+    $('.sidebarSlider').slick();
 
     $('.thumbnail-product-slider').slick({
         dots: false,
