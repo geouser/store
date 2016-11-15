@@ -62,7 +62,8 @@
 .custom-checkbox {
     margin: 3px 0;
 
-    input[type='checkbox'] {
+    input[type='checkbox'],
+    input[type='radio'] {
         display: none;
 
         &:checked + label {
@@ -118,7 +119,30 @@
         }
     }
 }
+.inline-checkbox {
+    list-style: none;
 
+    .custom-checkbox {
+        display: inline-block;
+        margin: 0 2px;
+
+        label {
+            border: 1px solid #ccc;
+            padding: 3px 10px;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        input[type='checkbox'],
+        input[type='radio'] {
+            &:checked + label {
+                border-color: $yellow;
+            }
+        }
+    }
+}
 
 .range-slider {
     width: 100%;
@@ -188,7 +212,8 @@
 }
 
 .color-checkbox {
-    input[type='checkbox'] {
+    input[type='checkbox'],
+    input[type='radio'] {
         display: none;
 
         &:checked + label {

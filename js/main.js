@@ -105,6 +105,30 @@ jQuery(document).ready(function($) {
     });
 
 
+
+    /*---------------------------
+                                  Qty carusel
+    ---------------------------*/
+    $('.count-carusel').each(function(index, el) {
+        var plus_btn = $(this).find('.plus');
+        var minus_btn = $(this).find('.minus');
+        var input = $(this).find('.qty');
+
+        plus_btn.on('click', function(event) {
+            event.preventDefault();
+            input.val( input.val()*1 + 1 );
+        });
+
+        minus_btn.on('click', function(event) {
+            event.preventDefault();
+            if ( input.val() >= 2 ) {
+                input.val( input.val()*1 - 1 );
+            }
+        });
+
+    });
+
+
     /*---------------------------
                                   Sliders
     ---------------------------*/
@@ -215,10 +239,24 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Easy zoom
     ---------------------------*/
+
+    $('.main-product-slider .slide').each(function(index, el) {
+        $(this).addClass('disabled');
+        if ( index == 0) { {
+            $(this).removeClass('disabled').addClass('active')
+        }}
+    });
+
+    $('.thumbnail-product-slider a').on('click', function(event) {
+        event.preventDefault();
+        $('.main-product-slider .slide').removeClass('active').addClass('disabled')
+        $('.main-product-slider .slide[data-slide='+ $(this).attr('data-slide') +']').removeClass('disabled').addClass('active');
+    });
+
     $('.zoom-image').elevateZoom({
-        tint:true,
-        tintColour:'#F90',
-        tintOpacity:0.5,
+        tint: true,
+        tintColour: '#F90',
+        tintOpacity: 0.5,
         responsive: true,
         scrollZoom: true,
         borderSize: 0,
@@ -231,6 +269,33 @@ jQuery(document).ready(function($) {
         zoomTintFadeIn: 200,
         zoomTintFadeOut: 200,
         gallery: 'gallery'
+    });
+
+
+
+    $('.main-product-slider').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true,
+        },
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function(element) {
+                return element.find('img');
+            }
+        }
+        
     });
 
 
