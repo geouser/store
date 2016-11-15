@@ -3,9 +3,26 @@
     @include flex($alignI: flex-start);
     border: 1px solid #e8e8e8;
     padding: 15px 20px;
+    margin-bottom: 40px;
+
+    @media (max-width: 1199px) {
+        padding: 10px;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 
     .product-image {
         width: 350px;
+
+        @media (max-width: 767px) {
+            margin: 0 auto 40px;
+        }
+
+        @media (max-width: 450px) {
+            width: 270px;
+        }
     }
 
     .main-product-slider {
@@ -131,6 +148,11 @@
         width: calc(100% - 350px);
         padding-left: 30px;
 
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 0;
+        }
+
         .ratings {
             display: block;
             width: 100%;
@@ -206,6 +228,11 @@
 
         .col-label {
             width: 60px;
+
+            @media (max-width: 400px) {
+                width: 50px;
+                font-size: 12px;
+            }
         }
 
         .regular-price {
@@ -230,6 +257,10 @@
             text-align: center;
             padding: 0;
             border: 0;
+
+            @media (max-width: 400px) {
+                width: 100%;
+            }
 
             &:hover {
                 background-color: #f7cd45;
@@ -279,6 +310,10 @@
         position: relative;
         border: 1px solid #e8e8e8;
         text-align: center;
+
+        @media (max-width: 400px) {
+            width: 100px;
+        }
     }
 }
 

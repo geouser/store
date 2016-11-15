@@ -324,6 +324,10 @@ jQuery(document).ready(function($) {
         }
     })
 
+    $('.productInfoTabs').tabs({
+        heightStyle: 'content',
+    })
+
     $('.product-submenu__small__slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1

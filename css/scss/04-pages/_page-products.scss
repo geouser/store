@@ -121,6 +121,7 @@
 }
 .inline-checkbox {
     list-style: none;
+    margin-bottom: -5px;
 
     .custom-checkbox {
         display: inline-block;
@@ -512,6 +513,7 @@
 }
 
 .productInfoTabs {
+    margin-bottom: 40px;
     &__nav {
         width: 100%;
         border: 1px solid #e8e8e8;
@@ -570,7 +572,6 @@
         min-width: 120px;
         margin-top: 40px;
     }
-    font-family: "Open Sans";
 }
 
 .data-table {
