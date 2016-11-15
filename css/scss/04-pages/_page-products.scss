@@ -396,3 +396,91 @@
         }
     }
 }
+
+
+.sidebarSlider {
+    padding: 0 20px 55px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    .slick-arrow {
+        top: auto;
+        bottom: 15px;
+    }
+}
+.sidebarSlider__product {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8e8;
+    @extend %clearfix;
+    &__info {
+        float: left;
+        > a {
+            width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333333;
+            background-color: white;
+            display: block;
+            &:hover {
+                color: #ffc300;
+            }
+        }
+    }
+    > a {
+        float: left;
+        margin-right: 20px;
+        border: 1px solid transparent;
+        overflow: hidden;
+        img {
+            max-width: 72px;
+        }
+    }
+    .ratings {
+            float: left;
+            height: 17px;
+        }
+
+    .rating-box {
+        background: url(../images/bkg_rating.png) repeat-x scroll 0px 6px transparent;
+        display: inline-block;
+        height: 17px;
+        position: relative;
+        vertical-align: middle;
+        width: 80px;
+        margin: 0 0;
+        float: left;
+
+        .rating {
+            background: url(../images/bkg_rating.png) repeat-x scroll 0px 100% transparent;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+        }
+    }
+    .price-box {
+        @extend %clearfix;
+        .special-price {
+            float: left;
+            color: #ffc300;
+            font-size: 18px;
+        }
+    }
+    .old-price {
+        float: left; margin-top: 3px;
+        color: #999999;
+        font-size: 14px;
+        margin-left: 10px;
+        text-decoration: line-through;
+    }
+}
+
+.sidebar__title {
+    line-height: 50px;
+    font-size: 123.07%;
+    text-transform: uppercase;
+    color: #333333;
+    padding-left: 20px;
+    border: 1px solid #e8e8e8;
+    display: block;
+}
