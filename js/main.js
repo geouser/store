@@ -205,10 +205,9 @@ jQuery(document).ready(function($) {
 
     $('.thumbnail-product-slider').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        asNavFor: '.main-product-slider',
         focusOnSelect: true
     })
 
@@ -216,7 +215,23 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Easy zoom
     ---------------------------*/
-    var $easyzoom = $('.easy-zoom').easyZoom();
+    $('.zoom-image').elevateZoom({
+        tint:true,
+        tintColour:'#F90',
+        tintOpacity:0.5,
+        responsive: true,
+        scrollZoom: true,
+        borderSize: 0,
+        zoomWindowWidth: 350,
+        zoomWindowHeight: 350,
+        lensFadeIn: 200,
+        lensFadeOut: 200,
+        zoomWindowFadeIn: 200,
+        zoomWindowFadeOut: 200,
+        zoomTintFadeIn: 200,
+        zoomTintFadeOut: 200,
+        gallery: 'gallery'
+    });
 
 
     /*---------------------------

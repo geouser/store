@@ -433,22 +433,33 @@
                         <div class="product-view">
                             <div class="product-image">
                                 <div class="main-product-slider">
-                                    <div class="slide easy-zoom" data-slide="1">
-                                        <!-- 
-                                            a href - original image size
-                                            img src - image thumbnail 350*350
-                                         -->
-                                        <a href="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/500x500/9df78eab33525d08d6e5fb8d27136e95/2/_/2_1.png">
-                                            <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/500x500/9df78eab33525d08d6e5fb8d27136e95/2/_/2_1.png" alt="">
-                                        </a>
+                                    <div class="slide">
+                                        <!-- img src - image thumbnail 350*350, img data-zoom-image - original image size -->
+                                        <img src="images/product.png" data-zoom-image="images/product.png" alt="" class="zoom-image">
                                     </div>
-                                    <div class="slide easy-zoom" data-slide="2">
-                                        <a href="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/500x500/9df78eab33525d08d6e5fb8d27136e95/2/_/2_1.png">
-                                            <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/500x500/9df78eab33525d08d6e5fb8d27136e95/2/_/2_1.png" alt="">
-                                        </a>
+                                    <div class="slide">
+                                        <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-zoom-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" alt="" class="zoom-image">
                                     </div>
                                 </div>
-                                <div class="thumbnail-product-slider"></div>
+                                <p class="slider-title">Click to popup images</p>
+                                <div class="thumbnail-product-slider" id="gallery">
+                                    <!-- a data-image - image-thumbnail 350*350, data-zoom-image - original size, img src - image thumbnail 100*100 -->
+                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
+                                        <img src="images/product-min.png" alt="" class="thumbnail">
+                                    </a>
+                                    <a href="#" class="slide" data-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png" data-zoom-image="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/image/1800x/040ec09b1e35df139433887a97daa66f/e/l/elec1.png">
+                                        <img src="http://demo.7uptheme.com/cr7/media/catalog/product/cache/8/thumbnail/100x100/9df78eab33525d08d6e5fb8d27136e95/e/l/elec1.png" alt="" class="thumbnail">
+                                    </a>
+                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
+                                        <img src="images/product-min.png" alt="" class="thumbnail">
+                                    </a>
+                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
+                                        <img src="images/product-min.png" alt="" class="thumbnail">
+                                    </a>
+                                    <a href="#" class="slide" data-image="images/product.png" data-zoom-image="images/product.png">
+                                        <img src="images/product-min.png" alt="" class="thumbnail">
+                                    </a>
+                                </div>
                             </div> <!-- end product image -->
 
                             <div class="product-details">
@@ -620,7 +631,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 
-        <script src="js/easyzoom.js"></script>
+        <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
 
         <script src="js/main.js"></script>
     </body>
